@@ -3,9 +3,9 @@
     <hr>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
-          <label for="description">Author:</label>
-          <textarea class="form-control" id="description" rows="1" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
-          <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+          <label for="Author">Author:</label>
+          <textarea class="form-control" id="Author" rows="1" [(ngModel)]="newQuote.Author" name="Author" #description="ngModel" required></textarea>
+          <div [hidden]="Author.valid || Author.pristine" class="alert alert-danger">
             <p>This field is required</p>
           </div>  
             <label for="name">Your quote:</label>
@@ -13,7 +13,7 @@
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
               <p>This field is required</p>
             </div>
-            <label for="description">Submitted by:</label>
+            <label for="poster">Submitted by:</label>
             <textarea class="form-control" id="poster"  [(ngModel)]="newQuote.poster" name="poster" #poster="ngModel" required></textarea>
             <div [hidden]="poster.valid || poster.pristine" class="alert alert-danger">
               <p>This field is required</p>
